@@ -1,6 +1,31 @@
+'use client'
+import { useState } from 'react';
 import Link from "next/link";
+import signUp from "@/firebase/auth/signup";
+import { useRouter } from 'next/navigation';
 
 const SignupPage = () => {
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const router = useRouter();
+
+  const [error, setError] = useState(null);
+
+
+  const handleForm = async (event) => {
+    event.preventDefault()
+
+    const { result, error } = await signUp(email, password);
+
+    if (error) {
+        return console.log(error)
+    }
+
+    // else successful
+    console.log(result)
+    return router.push("/")
+}
   return (
     <>
       <section className="relative z-10 overflow-hidden pt-36 pb-16 md:pb-20 lg:pt-[180px] lg:pb-28">
@@ -11,7 +36,7 @@ const SignupPage = () => {
                 <h3 className="mb-5 text-center text-2xl font-bold text-black dark:text-white sm:text-3xl">
                   Create your account
                 </h3>
-             
+
                 <button className="mb-6 flex w-full items-center justify-center rounded-md bg-white p-3 text-base font-medium text-body-color shadow-one hover:text-primary dark:bg-[#242B51] dark:text-body-color dark:shadow-signUp dark:hover:text-white">
                   <span className="mr-3">
                     <svg
@@ -21,7 +46,7 @@ const SignupPage = () => {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <g clip-path="url(#clip0_95:967)">
+                      <g clipPath="url(#clip0_95:967)">
                         <path
                           d="M20.0001 10.2216C20.0122 9.53416 19.9397 8.84776 19.7844 8.17725H10.2042V11.8883H15.8277C15.7211 12.539 15.4814 13.1618 15.1229 13.7194C14.7644 14.2769 14.2946 14.7577 13.7416 15.1327L13.722 15.257L16.7512 17.5567L16.961 17.5772C18.8883 15.8328 19.9997 13.266 19.9997 10.2216"
                           fill="#4285F4"
@@ -55,22 +80,9 @@ const SignupPage = () => {
                   </p>
                   <span className="hidden h-[1px] w-full max-w-[60px] bg-body-color sm:block"></span>
                 </div>
-                <form>
-                  <div className="mb-8">
-                    <label
-                      for="name"
-                      className="mb-3 block text-sm font-medium text-dark dark:text-white"
-                    >
-                      {" "}
-                      Full Name{" "}
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Enter your full name"
-                      className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
-                    />
-                  </div>
+                <form onSubmit={handleForm}>
+                  {error && <p color="danger">{error}</p>}
+
                   <div className="mb-8">
                     <label
                       for="email"
@@ -81,7 +93,10 @@ const SignupPage = () => {
                     </label>
                     <input
                       type="email"
+                      value={email}
+                      onChange={(event) => setEmail(event.target.value)}
                       name="email"
+                      id="signUpEmail"
                       placeholder="Enter your Email"
                       className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                     />
@@ -97,10 +112,14 @@ const SignupPage = () => {
                     <input
                       type="password"
                       name="password"
+                      value={password}
+                      onChange={(event) => setPassword(event.target.value)}
+                      id="signUpPassword"
                       placeholder="Enter your Password"
                       className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                     />
                   </div>
+               
                   <div className="mb-8 flex">
                     <label
                       for="checkboxLabel"
