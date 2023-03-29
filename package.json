@@ -24,7 +24,8 @@
     "redux": "^4.2.1",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.4.2",
-    "sweetalert": "^2.1.2"
+    "sweetalert": "^2.1.2",
+    "vercel": "^28.17.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
