@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react';
 import Link from "next/link";
-import signUp from "@/firebase/auth/signup";
+import signUp from "../../firebase/auth/signUp";
 import { useRouter } from 'next/navigation';
 
 const SignupPage = () => {
