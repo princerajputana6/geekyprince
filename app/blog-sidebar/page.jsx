@@ -1,6 +1,6 @@
-import RelatedPost from "@/components/Blog/RelatedPost";
-import SharePost from "@/components/Blog/SharePost";
-import TagButton from "@/components/Blog/TagButton";
+import RelatedPost from "@/components/CaseStudy/RelatedPost";
+import SharePost from "@/components/CaseStudy/SharePost";
+import TagButton from "@/components/CaseStudy/TagButton";
 import NewsLatterBox from "@/components/Contact/NewsLatterBox";
 import Image from "next/image";
 

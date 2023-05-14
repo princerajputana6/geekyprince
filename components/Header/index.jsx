@@ -1,13 +1,14 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 import { Dropdown, Avatar } from "flowbite-react";
-import addData from "@/firebase/firestore/addData";
+import addData from "../../firebase/firestore/addData";
 
 import { useAuthContext } from "@/context/AuthContext";
-
+import logo from "../../public/images/logo.png"
 const Header = () => {
   const { user,logOut } = useAuthContext()
   const handleLogout = async () => {
@@ -59,10 +60,12 @@ const Header = () => {
       setOpenIndex(index);
     }
   };
-console.log("_____",user)
 
   return (
     <>
+
+
+
       <header
         className={`header top-0 left-0 z-40 flex w-full items-center bg-transparent ${sticky
           ? "!fixed !z-[9999] !bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-primary dark:!bg-opacity-20"
@@ -77,8 +80,8 @@ console.log("_____",user)
                 className={`header-logo block w-full ${sticky ? "py-5 lg:py-2" : "py-8"
                   } `}
               >
-                <h1 className="w-full dark:hidden text-2xl font-bold"><span className="text-[#4A6CF7]">Geeky</span> Prince</h1>
-                <h1 className="hidden w-full dark:block text-2xl font-bold"><span className="text-[#4A6CF7]">Geeky</span> Prince</h1>
+                    <Image src={logo} alt="geeky prince"/>
+                
               </Link>
             </div>
             <div className="flex w-full items-center justify-between px-4">
@@ -157,7 +160,7 @@ console.log("_____",user)
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-                {user ? (
+                {/* {user ? (
                   <Dropdown
                     arrowIcon={false}
                     inline={true}
@@ -183,7 +186,7 @@ console.log("_____",user)
                   >
                     Sign In
                   </Link>
-                )}
+                )} */}
                 &nbsp;&nbsp;
                 <ThemeToggler />
               </div>

@@ -2,7 +2,7 @@ const menuData = [
   {
     id: 1,
     title: "About Us",
-    path: "/",
+    path: "/about",
     newTab: false,
   },
   {
@@ -13,31 +13,31 @@ const menuData = [
       {
         id: 41,
         title: "Website Development",
-        path: "/about",
+        path: "/website-development",
         newTab: false,
       },
       {
         id: 42,
         title: "CMS Development",
-        path: "/contact",
+        path: "/cms-development",
         newTab: false,
       },
       {
         id: 43,
         title: "Andriod Development",
-        path: "/blog",
+        path: "/android-development",
         newTab: false,
       },
       {
         id: 44,
         title: "Digital Marketing Services",
-        path: "/blog-sidebar",
+        path: "/digital-marketing-services",
         newTab: false,
       },
       {
         id: 45,
         title: "Business Consulting",
-        path: "/blog-details",
+        path: "/business-consulting",
         newTab: false,
       }
     ],
@@ -45,7 +45,7 @@ const menuData = [
   {
     id: 3,
     title: "Case Study",
-    path: "/about",
+    path: "/case-study",
     newTab: false,
   },
   {

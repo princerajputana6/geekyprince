@@ -7,7 +7,7 @@ const AboutPage = () => {
     <>
       <Breadcrumb
         pageName="About Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="Geeky Prince Pvt. Ltd. is dedicated to Website and CMS Development . We believe in making a positive impact and giving back to the clients we serve."
       />
       <AboutSectionOne />
       <AboutSectionTwo />
