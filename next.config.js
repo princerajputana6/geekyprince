@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ['i.ibb.co','tuk-cdn.s3.amazonaws.com'],
+    domains: ['i.ibb.co','tuk-cdn.s3.amazonaws.com','w7.pngwing.com'],
   },
 
 };

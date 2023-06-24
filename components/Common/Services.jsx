@@ -7,7 +7,7 @@ function Services() {
        <div class="dark:bg-gray-900">
         <section class="container mx-auto py-20">
           <div class="flex flex-col items-center justify-center">
-            <div class="text-gray-800 text-center text-4xl font-black leading-10 dark:text-white md:text-5xl lg:text-6xl">
+            <div class="text-gray-800 text-center text-3xl font-black leading-10 dark:text-white md:text-4xl lg:text-5xl">
               <h1>Our Web Building Tech Stacks</h1>
             </div>
             <div class="grid items-center justify-center gap-y-20 gap-x-16 pt-24 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-20 lg:px-10 xl:gap-y-16 xl:gap-x-0 xl:px-0">

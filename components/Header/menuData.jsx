@@ -22,24 +22,24 @@ const menuData = [
         path: "/cms-development",
         newTab: false,
       },
-      {
-        id: 43,
-        title: "Andriod Development",
-        path: "/android-development",
-        newTab: false,
-      },
-      {
-        id: 44,
-        title: "Digital Marketing Services",
-        path: "/digital-marketing-services",
-        newTab: false,
-      },
-      {
-        id: 45,
-        title: "Business Consulting",
-        path: "/business-consulting",
-        newTab: false,
-      }
+      // {
+      //   id: 43,
+      //   title: "Andriod Development",
+      //   path: "/android-development",
+      //   newTab: false,
+      // },
+      // {
+      //   id: 44,
+      //   title: "Digital Marketing Services",
+      //   path: "/digital-marketing-services",
+      //   newTab: false,
+      // },
+      // {
+      //   id: 45,
+      //   title: "Business Consulting",
+      //   path: "/business-consulting",
+      //   newTab: false,
+      // }
     ],
   },
   {

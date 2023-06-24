@@ -125,8 +125,9 @@ const Footer = () => {
                 <ul>
                   <li>
                     <a
-                      href="/"
+                      href="https://docs.google.com/document/d/19PuUbwOfVRo-zaJEB_bXW7VwL-JK36upJQwTBxJPxoY/edit"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      target="___blank"
                     >
                       {" "}
                       Term & conditions{" "}
@@ -134,8 +135,9 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="/"
+                      href="https://docs.google.com/document/d/1pLfFVFziXLshz5Gt8ESbFjcSiI5s8POLuGfHO7ql5m4/edit#heading=h.3y5xj73sz0p"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      target="___blank"
                     >
                       {" "}
                       Privacy Policy{" "}
@@ -143,8 +145,9 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="/"
+                      href="https://docs.google.com/document/d/1XNX59UGWjbIQ4roqt3PsFBtn1Ws2qNgJEy32G8RQ2YY/edit"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      target="___blank"
                     >
                       {" "}
                       Cookie Policy{" "}
@@ -162,8 +165,9 @@ const Footer = () => {
                 <ul>
                   <li>
                     <a
-                      href="/"
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSfTwF8h2T3PaNR0M5RiLh1e_H2wpm9s3B2xsm8k_x35pe2Myg/viewform?usp=sf_link"
                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+                      target="___blank"
                     >
                       {" "}
                       Request a callback{" "}
