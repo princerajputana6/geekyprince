@@ -4,29 +4,29 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: "Tero Fordell",
+    designation: "Founder @Fundu",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
+      "The Geeky Prince Pvt. Ltd. has produced a significant competitive advantage in the industry thanks to Geeky’s well-thought opinions.",
     image: "/images/testimonials/auth-01.png",
     star: 5,
   },
   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
+    name: "ALIYA AMERSHI ",
+    designation: "Founder @Code free",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
+      "Geeky Prince Pvt. Ltd. is the firm to work with if you want to keep up to high standards. The professional workflows they stick to result in exceptional quality.",
+    image: "/images/testimonials/aouth-02.png",
     star: 5,
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "Rima Qureshi",
+    designation: "CSO @Verizon",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
+      "The verizon had the pleasure to work with Geeky Prince Pvt. Ltd. in building out core portions of our product, and the results really couldn’t have been better.",
+    image: "/images/testimonials/uauth-03.png",
     star: 5,
   },
 ];
@@ -37,7 +37,8 @@ const Testimonials = () => {
       <div className="container">
         <SectionTitle
           title="What Our Client's Says"
-          paragraph="Make sure that you are also reading the testimonials of our customers so you will get to know what type of services we are already offering to our customers."
+          paragraph="You shouldn’t believe our words
+          See what our Clients say."
           center
         />
 

@@ -14,7 +14,7 @@ const Video = () => {
       <div className="container">
         <SectionTitle
           title="We are ready to help"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          paragraph="Tailor the website to meet the specific needs of the company. Implement features such as e-commerce functionality, contact forms, interactive elements, content management systems (CMS), and integrations with third-party tools and platforms."
           center
           mb="80px"
         />
