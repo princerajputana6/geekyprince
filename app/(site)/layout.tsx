@@ -2,7 +2,7 @@
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Lines from "@/components/Lines";
+// import Lines from "@/components/Lines";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
@@ -25,7 +25,7 @@ export default function RootLayout({
           defaultTheme="light"
         >
 
-            <Lines />
+            {/* <Lines /> */}
             <Header />
             <ToasterContext />
             {children}
