@@ -1,7 +1,8 @@
 import BlogData from "@/components/Blog/blogData";
 import BlogItem from "@/components/Blog/BlogItem";
 import { Metadata } from "next";
-
+import { useEffect } from "react";
+import ReactGA from "react-ga";
 export const metadata: Metadata = {
   title: "Blog Page - Solid SaaS Boilerplate",
   description: "This is Blog page for Solid Pro",
@@ -9,6 +10,9 @@ export const metadata: Metadata = {
 };
 
 const BlogPage = async () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <>
       {/* <!-- ===== Blog Grid Start ===== --> */}

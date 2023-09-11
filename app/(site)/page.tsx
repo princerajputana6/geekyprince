@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import { useEffect } from "react";
+import ReactGA from "react-ga";
 import Hero from "@/components/Hero";
 import Brands from "@/components/Brands";
 import Feature from "@/components/Features";
@@ -21,6 +23,9 @@ export const metadata: Metadata = {
 
 
 export default function Home() {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
   return (
     <main>
       <Hero />
