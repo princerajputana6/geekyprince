@@ -1,4 +1,4 @@
-
+"use client"
 import { Metadata } from "next";
 import AboutSection from "@/components/About/index";
 import Breadcrumb from "@/components/Common/Breadcrump.jsx";
