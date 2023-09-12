@@ -653,10 +653,10 @@
     "golden-fleece" "^1.0.9"
     "pkg-dir" "^5.0.0"
 
-"@sanity/client@^6.3.0", "@sanity/client@^6.4.5", "@sanity/client@^6.4.9":
-  "integrity" "sha512-9y/exbu9kBgIuXouUWlHLGfPm3/jxRP8bSaysteILTQknLQZHExSyjFsYD/CxH3Xk43NzELqktvEXlP1/kZ6LA=="
-  "resolved" "https://registry.npmjs.org/@sanity/client/-/client-6.4.9.tgz"
-  "version" "6.4.9"
+"@sanity/client@^6.3.0", "@sanity/client@^6.4.11", "@sanity/client@^6.4.5", "@sanity/client@^6.4.9":
+  "integrity" "sha512-A8s5odg9b8ioamKDdfrfsp5rHsE8J+BOpknw6eRtIHF5BBkNGAYdS78NdS1m3R+llHotdpyS/X2+la4YgzU5/w=="
+  "resolved" "https://registry.npmjs.org/@sanity/client/-/client-6.4.11.tgz"
+  "version" "6.4.11"
   dependencies:
     "@sanity/eventsource" "^5.0.0"
     "get-it" "^8.4.3"
@@ -2981,10 +2981,10 @@
   "resolved" "https://registry.npmjs.org/groq-js/-/groq-js-1.2.0.tgz"
   "version" "1.2.0"
 
-"groq@^3.0.0", "groq@^3.14.5":
-  "integrity" "sha512-gRSMFXSDCVE9/69YfhIb4ymh2naGp+JtyrIDBzWrNpZghC/9W4bAkDmHqoWESiTbbpetYZrrFRF3yvcuW7daqA=="
-  "resolved" "https://registry.npmjs.org/groq/-/groq-3.15.1.tgz"
-  "version" "3.15.1"
+"groq@^3.0.0", "groq@^3.14.5", "groq@^3.16.4":
+  "integrity" "sha512-PexitOJcyUYLqGwim9VFyzhmCSLIMjN1e6Yfq8ZjO3U67VCIeTs0UI2XWHhjX4Lkx2O2gXeGZ2x1u/MRJhB3cQ=="
+  "resolved" "https://registry.npmjs.org/groq/-/groq-3.16.4.tgz"
+  "version" "3.16.4"
 
 "gunzip-maybe@^1.4.1":
   "integrity" "sha512-4haO1M4mLO91PW57BMsDFf75UmwoRX0GkdD+Faw+Lr+r/OZrOCS0pIBwOL1xCKQqnQzbNFGgK2V2CpBUPeFNTw=="
